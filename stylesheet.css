@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Georgia", serif;
+}
+
+body {
+  position: relative;
+
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: .3s;
+}
+.haeder .sticky {
+  background: red;
+}
+.logo {
+  position: relative;
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar {
+  flex-grow: 1;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: rgb(215, 35, 22);
+}
+
+.Home {
+  display: flex;
+  align-items: center;
+  padding: 2vb 5% 0;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: space-between;
+  background: url("Pic/final.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.Home-content {
+  text-align: left;
+  max-width: 60rem;
+  color: rgb(8, 8, 8);
+  line-height: 1.5;
+}
+
+.Home-content h3,
+.Home-content h2,
+.Home-content h1,
+.Home-content p {
+  margin-left: 1rem;
+}
+
+.Home-content p {
+  font-size: 1.2rem;
+}
+
+.Home-content h1,
+.Home-content h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.Home-content .animated {
+  position: relative;
+  width: 32.8rem;
+}
+
+.Home-content .animated h3 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: .7px rgb(14, 13, 13);
+}
+
+.btn-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.btn-button .btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background: red;
+  border: .2rem solid red;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-button .btn:nth-child(1),
+.btn-button .btn:nth-child(2) {
+  background: transparent;
+  color: white;
+}
+
+.btn-button .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: red;
+  z-index: -1;
+  transition: .5s;
+}
+
+.btn-button .btn:hover::before {
+  width: 100%;
+}
+
+.home-foot {
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-foot a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: .2rem solid rgb(225, 85, 162);
+  border-radius: 50%;
+  color: black;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.home-foot a:hover {
+  color: black;
+}
+
+.home-foot a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(225, 85, 162);
+  z-index: -1;
+  transition: .5s;
+}
+
+.home-foot a:hover::before {
+  width: 100%;
+}
+
+
+.About {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("Pic/navbg.png");
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem;
+  padding-bottom: 6rem;
+}
+
+.heading{
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+span{
+  color: red;
+}
+
+.about-img{
+  position: relative;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img{
+  width: 90%;
+  border-radius: 50%;
+  border: .2rem solid black;
+}
+
+.about-img .circle-spin{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: .2rem solid transparent;
+  border-bottom: .2rem solid transparent;
+  border-right: .2rem solid black;
+  border-left: .2rem solid black;
+}
+
+.About-content{
+  text-align: center;
+}
+.About-content h3{
+  font-size: 2.6rem;
+}
+.About-content p{
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+.Skills {
+  min-height: auto;
+  background: url("Pic/navbg.png");
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  padding: 4rem ;
+  padding-bottom: 4rem;
+}
+
+.Skills .skills-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.skills-row .skills-column{
+  flex: 1 1 40rem;
+}
+
+.skills-column .title{
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem;
+}
+
+.skill-box .skill-content{
+  position: relative;
+  border: .2rem solid rgb(13, 4, 77);
+  border-radius: .6rem;
+  padding: .5rem 1.5rem;
+  z-index: 1;
+}
+
+.skill-box .skill-content::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background:url("Pic/bg-2.png");
+  background-size: cover;
+  z-index: -1;
+  transition: .5s;
+}
+.skill-box .skill-content:hover::before{
+  width: 100%;
+}
+
+.skill-content .progress{
+  padding: 1rem 0;
+}
+
+.skill-content .progress h3{
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-content .progress h3 span{
+  color: black;
+}
+
+.skill-content .progress .bar{
+  height: 2.5rem;
+  border-radius: .6rem;
+  border: .2rem solid rgb(13, 4, 77);
+  padding: .5rem;
+  margin: 1rem 0;
+}
+
+.skill-content .progress .bar span{
+  display: block;
+  height: 100%;
+  border-radius: .3rem;
+  background: rgb(13, 4, 77);
+}
+
+.skills-column:nth-child(1) .skill-content .progress:nth-child(1) .bar span{
+  width: 90%;
+}
+
+.skills-column:nth-child(1) .skill-content .progress:nth-child(2) .bar span{
+  width: 90%;
+}
+
+.skills-column:nth-child(1) .skill-content .progress:nth-child(3) .bar span{
+  width: 80%;
+}
+
+.skills-column:nth-child(1) .skill-content .progress:nth-child(4) .bar span{
+  width: 60%;
+}
+
+.skills-column:nth-child(1) .skill-content .progress:nth-child(5) .bar span{
+  width: 80%;
+}
+
+.skills-column:nth-child(2) .skill-content .progress:nth-child(1) .bar span{
+  width: 90%;
+}
+
+.skills-column:nth-child(2) .skill-content .progress:nth-child(2) .bar span{
+  width: 80%;
+}
+
+.skills-column:nth-child(2) .skill-content .progress:nth-child(3) .bar span{
+  width: 60%;
+}
+
+.skills-column:nth-child(2) .skill-content .progress:nth-child(4) .bar span{
+  width: 70%;
+}
+
+.skills-column:nth-child(2) .skill-content .progress:nth-child(5) .bar span{
+  width: 60%;
+}
+
+.portfolio {
+  min-height: auto;
+  background: url("Pic/navbg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem;
+}
+
+.portfolio .container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+}
+
+.portfolio .container .column {
+  width: 20%; 
+  box-sizing: border-box;
+  padding: 10px;
+  background: transparent; 
+  border: 2px solid black;
+}
+.portfolio .container .column:nth-child(2){
+  width: 80%;
+}
+.portfolio .container .column:nth-child(4){
+  width: 80%;
+}
+.portfolio .container .column:nth-child(6){
+  width: 80%;
+}
+.portfolio .container .column:nth-child(8){
+  width: 80%;
+}
+.portfolio .container .column img{
+  width: 100%;
+}
+
+.portfolio .container .column h4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.portfolio .container .column p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.Contact{
+  min-height: auto;
+  background: url("Pic/navbg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem;
+}
+.Contact form{
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.Contact form .input-box{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Contact form .input-box .input-field{
+  position: relative;
+  width: 49%;
+  margin: .8rem 0;
+}
+.Contact form .input-box .input-field input,
+.Contact form .text-area-field textarea {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: black;
+  background: transparent;
+  border-radius: .6rem;
+  border: .2rem solid black;
+}
+.Contact form .input-box .input-field input::placeholder,
+.Contact form .text-area-field textarea::placeholder{
+  color: red;
+}
+.Contact form .text-area-field {
+  position: relative;
+  margin: .8rem 0 2.7rem;
+  display: flex;
+}
+.Contact form .text-area-field textarea{
+  resize: none;
+}

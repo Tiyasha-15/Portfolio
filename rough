@@ -1,0 +1,191 @@
+.Home-content {
+  text-align: center;
+  color: rgb(8, 8, 8);
+}
+
+.Home-content h3,
+.Home-content h1,
+.Home-content p {
+  margin-left: 1rem;
+}
+
+
+section{
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+
+.btn-button {
+  position:relative;
+  justify-content: flex-start;
+  display: flex;
+  margin: 15px 20px;
+  cursor: pointer;
+  width: 34.5rem;
+  height: 5rem;
+}
+
+.btn-button .btn {
+  position: relative;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  background: red;
+}
+
+.p-column:nth-child(2) .p-content .each-project img{
+  padding-left: 30rem;
+}
+
+<!--Portfolio section--> 
+  <section class="portfolio" id="Portfolio">
+    <h2 class="heading"><u>About <span>Portfolio</span></u></h2>
+    <div class="p-row">
+      <div class="p-column">
+        <h3 class="title"><a href="#">Handwritting To Text Converter</a></h3>
+        <div class="p-box">
+          <div class="p-content">
+            <div class="each-project"><img src="convert-handwriting-to-text.png"></div>
+            <div class="contain">In this project, if you upload a handwritten image, the system will recognize the characters in the image and provide you with the corresponding text output. </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-column">
+        <h3 class="title"><a href="#">Pdf Reader and Chatbot</a></h3>
+        <div class="p-box">
+          <div class="p-content">
+            <div class="each-project"><img src="pdf.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="p-column">
+        <h3 class="title"><a href="#">Portfolio</a></h3>
+        <div class="p-box">
+          <div class="p-content">
+            <div class="each-project"><img src="portfolio.jpg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  .portfolio {
+    min-height: auto;
+    background: url("navbg.png");
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+  }
+  
+  .portfolio .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .portfolio .p-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .p-column {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+  
+  .title a {
+    color: red;
+    font-size: 1.7rem;
+    text-decoration: none;
+  }
+  
+  .p-column:nth-child(1) .title a{
+    padding-left: 30rem;
+  }
+  
+  .p-box .p-content {
+    position: relative;
+    width: fit-content;
+    border: .2rem solid rgb(13, 4, 77);
+    border-radius: .6rem;
+    padding: .5rem 2.5rem;
+    z-index: 1;
+  }
+  
+  .each-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .each-project img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    width: 10cm; /* Set a specific width for the images */
+    margin-bottom: 10px;
+  }
+  
+  .contain{
+    padding-left: 30rem;
+  }
+
+  <div class="row">
+    <div class="column">
+      <img src="Pic/convert-handwriting-to-text.png" alt="project 1">
+    </div>
+    <div class="column">
+        <h4>Converting Handwrtting Into Text </h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="Pic/pdf.jpg" alt="project 2">
+    </div>
+    <div class="column">
+      <h4>PDF Reader AI Chatbot </h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="Pic/portfolio.jpg" alt="project 3">
+    </div>
+    <div class="column">
+      <h4>Portfolio </h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="" alt="project 1">
+    </div>
+    <div class="column">
+      <h4>Movie Ticket Booking Frontend </h4>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="column">
+      <img src="Pic/convert-handwriting-to-text.png" alt="project 1">
+    </div>
+
+  </div>
+
+  .portfolio .container{
+    width: 95%;
+    height: 90%;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio .container .column{
+    width: 50%; /* Each column takes half of the container's width */
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
